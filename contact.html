@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) for Google Analytics 4.
+       Replace G-XXXXXXXXXX in BOTH places below with your own Measurement ID. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Artificial Vision for product questions, orders, bulk deals and warranty support. Subscribe to our newsletter.">
+  <title>Contact Us | Artificial Vision</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Artificial Vision home">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Artificial<strong>Vision</strong></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm nav-cta">Get Expert Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">We are here to help</p>
+        <h1>Contact Us</h1>
+        <p>Questions about a product, an order or a bulk deal? Send us an enquiry.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- ================= ENQUIRY FORM ================= -->
+        <div class="form-card reveal">
+          <h2>Send an Enquiry</h2>
+          <p class="form-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> This is a demonstration form. Your message is checked for errors but is not sent anywhere until a form service is connected.</p>
+
+          <form id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Rahul Sharma" required aria-describedby="name-error">
+                <p class="field-error" id="name-error" aria-live="polite"></p>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required aria-describedby="email-error">
+                <p class="field-error" id="email-error" aria-live="polite"></p>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="subject" name="subject" placeholder="e.g. Question about AV Nova 14 Laptop" required aria-describedby="subject-error">
+              <p class="field-error" id="subject-error" aria-live="polite"></p>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell us what you need help with (at least 10 characters)" required aria-describedby="message-error"></textarea>
+              <p class="field-error" id="message-error" aria-live="polite"></p>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Enquiry <i class="fa-solid fa-paper-plane" aria-hidden="true"></i></button>
+            <div class="form-status" role="status" aria-live="polite" hidden></div>
+          </form>
+        </div>
+
+        <!-- ================= CONTACT INFORMATION ================= -->
+        <aside class="info-column">
+          <div class="info-card reveal">
+            <h2>Contact Information</h2>
+            <ul class="info-list">
+              <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><div><strong>Store address</strong><span>Shop 214, 2nd Floor, Nehru Place, New Delhi 110019</span></div></li>
+              <li><i class="fa-solid fa-phone" aria-hidden="true"></i><div><strong>Phone</strong><a href="tel:+911140000000">+91 11 4000 0000</a></div></li>
+              <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><div><strong>Email</strong><a href="mailto:support@artificialvision.example">support@artificialvision.example</a></div></li>
+              <li><i class="fa-solid fa-clock" aria-hidden="true"></i><div><strong>Store hours</strong><span>Monday to Saturday, 10:00 AM to 8:00 PM</span></div></li>
+            </ul>
+            <h3>Follow us</h3>
+            <ul class="social-links social-dark">
+              <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+              <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+              <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+              <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X</a></li>
+            </ul>
+          </div>
+
+          <!-- ================= NEWSLETTER ================= -->
+          <div class="newsletter-card reveal">
+            <h2><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i> Join Our Newsletter</h2>
+            <p>Get new launches, student offers and buying guides once a month. Demonstration only: no email is stored or sent.</p>
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <label for="newsletter-email" class="visually-hidden">Email address for newsletter</label>
+              <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" autocomplete="email" required aria-describedby="newsletter-error">
+              <button type="submit" class="btn btn-light">Subscribe</button>
+            </form>
+            <p class="field-error light" id="newsletter-error" aria-live="polite"></p>
+            <div class="form-status" id="newsletter-status" role="status" aria-live="polite" hidden></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ================= MAP ================= -->
+    <section class="map-section" aria-label="Store location map">
+      <div class="container">
+        <iframe class="map-frame" title="Map showing Nehru Place, New Delhi" src="https://maps.google.com/maps?q=Nehru%20Place%2C%20New%20Delhi&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">Quick answers</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>How long does delivery take?</summary><p>Most orders arrive in 2 to 4 working days. Remote locations may take up to 7 days.</p></details>
+          <details class="reveal"><summary>Do you offer EMI (Equated Monthly Instalment) options?</summary><p>Yes, no-cost EMI is available on selected products above ₹10,000 with major bank cards.</p></details>
+          <details class="reveal"><summary>What is your return policy?</summary><p>You can return any unused product in its original packaging within 10 days of delivery.</p></details>
+          <details class="reveal"><summary>How do I claim warranty?</summary><p>Send us your order number and a short description of the issue through the form above. Our team will arrange a pickup or service visit.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light" aria-label="Artificial Vision home">
+          <img src="images/logo.svg" alt="" width="40" height="40">
+          <span>Artificial<strong>Vision</strong></span>
+        </a>
+        <p>Smart, reliable electronics with honest prices and real expert support.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Shop 214, Nehru Place, New Delhi 110019</li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+911140000000">+91 11 4000 0000</a></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:support@artificialvision.example">support@artificialvision.example</a></li>
+          <li><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon to Sat, 10 AM to 8 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Follow Us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> Artificial Vision. All rights reserved.</p>
+        <p class="disclaimer">Artificial Vision is a fictional brand created for a Marketing Analytics course project. Products, prices, people and contact details are sample content. Photos: Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+</body>
+</html>

@@ -1,9 +1,274 @@
-<html>
-  <head>
-  <title>Test page</title>
-  </head>
-  <body>
-    <p>This is page 1</p>
-    <a href="page2.html">Go to page2 -> </a>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) for Google Analytics 4.
+       Replace G-XXXXXXXXXX in BOTH places below with your own Measurement ID. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Artificial Vision: smart, reliable electronics. Laptops, smartphones, audio, wearables and cameras with honest prices and expert support.">
+  <title>Artificial Vision | Smart Electronics Store</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Artificial Vision home">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Artificial<strong>Vision</strong></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+        <li><a href="products.html" class="nav-link">Products</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm nav-cta">Get Expert Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow"><i class="fa-solid fa-bolt" aria-hidden="true"></i> New season, new tech</p>
+          <h1>Smarter Electronics for a <span class="gradient-text">Sharper Tomorrow</span></h1>
+          <p class="hero-sub">From powerful laptops to crystal-clear audio, Artificial Vision brings you tested, genuine gadgets at honest prices, with experts ready to help you choose.</p>
+          <div class="hero-actions">
+            <a href="products.html" class="btn btn-primary btn-lg">Shop Products <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="contact.html" class="btn btn-outline-light btn-lg">Talk to an Expert</a>
+          </div>
+          <ul class="hero-stats" aria-label="Store highlights">
+            <li><strong>50,000+</strong><span>Happy customers</span></li>
+            <li><strong>2-Year</strong><span>Warranty on AV range</span></li>
+            <li><strong>500+</strong><span>Cities delivered</span></li>
+          </ul>
+        </div>
+        <div class="hero-visual">
+          <img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Wireless headphones, keyboard and mouse arranged on a desk" width="900" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+          <div class="floating-card card-1"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> Free delivery over ₹999</div>
+          <div class="floating-card card-2"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 100% genuine products</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TRUST FEATURES ================= -->
+    <section class="features-strip" aria-label="Why shop with us">
+      <div class="container features-grid">
+        <div class="feature reveal">
+          <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+          <div><h2>Genuine &amp; Tested</h2><p>Every device passes a 30-point quality check.</p></div>
+        </div>
+        <div class="feature reveal">
+          <i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+          <div><h2>Fast Delivery</h2><p>2 to 4 day shipping across India.</p></div>
+        </div>
+        <div class="feature reveal">
+          <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+          <div><h2>10-Day Returns</h2><p>Simple, no-questions return window.</p></div>
+        </div>
+        <div class="feature reveal">
+          <i class="fa-solid fa-headset" aria-hidden="true"></i>
+          <div><h2>Expert Support</h2><p>Real people, 7 days a week.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= BRAND INTRODUCTION ================= -->
+    <section class="section">
+      <div class="container split">
+        <div class="split-media reveal">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Artificial Vision team working together on laptops" loading="lazy" width="900" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+        </div>
+        <div class="split-text reveal">
+          <p class="eyebrow">Who we are</p>
+          <h2 class="section-title left">Technology that sees what you need</h2>
+          <p>Artificial Vision started as a small electronics counter and grew into a trusted destination for people who want technology that simply works. We combine carefully chosen global brands with our own AV range of laptops, phones, audio and wearables.</p>
+          <p>Our team tests every product before it reaches you, explains specifications in plain language and stays with you long after the purchase.</p>
+          <a href="about.html" class="btn btn-secondary">Read Our Story <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Browse</p>
+          <h2 class="section-title">Shop by Category</h2>
+          <p class="section-sub">Pick a category to jump straight to the right products.</p>
+        </div>
+        <div class="category-grid">
+          <a class="category-tile reveal" href="products.html?category=computing"><i class="fa-solid fa-laptop" aria-hidden="true"></i><span>Computing</span></a>
+          <a class="category-tile reveal" href="products.html?category=mobile"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i><span>Mobiles &amp; Tablets</span></a>
+          <a class="category-tile reveal" href="products.html?category=audio"><i class="fa-solid fa-headphones" aria-hidden="true"></i><span>Audio</span></a>
+          <a class="category-tile reveal" href="products.html?category=wearables"><i class="fa-solid fa-clock" aria-hidden="true"></i><span>Wearables</span></a>
+          <a class="category-tile reveal" href="products.html?category=cameras"><i class="fa-solid fa-camera" aria-hidden="true"></i><span>Cameras &amp; Drones</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Customer favourites</p>
+          <h2 class="section-title">Featured Products</h2>
+          <p class="section-sub">Our best-selling devices this month, picked by our tech team.</p>
+        </div>
+
+        <div class="product-grid featured-grid">
+          <article class="product-card reveal" data-list="home_featured" data-id="av-nova-14" data-name="AV Nova 14 Laptop" data-category-label="Computing" data-price="64999">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="AV Nova 14 laptop on a wooden desk" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge">Bestseller</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Computing</p>
+              <h3>AV Nova 14 Laptop</h3>
+              <p class="product-desc">14-inch 2.8K display, 16 GB RAM and 512 GB SSD in a light 1.3 kg aluminium body.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹64,999</span> <span class="mrp">₹72,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="home_featured" data-id="av-pulse-x" data-name="AV Pulse X Smartphone" data-category-label="Mobiles &amp; Tablets" data-price="29999">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="AV Pulse X smartphone showing its home screen" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Mobiles &amp; Tablets</p>
+              <h3>AV Pulse X Smartphone</h3>
+              <p class="product-desc">6.7-inch 120 Hz AMOLED screen, 50 MP triple camera and a 5000 mAh battery.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹29,999</span> <span class="mrp">₹34,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="home_featured" data-id="av-soundwave-pro" data-name="AV SoundWave Pro Headphones" data-category-label="Audio" data-price="7499">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Black over-ear wireless headphones on a yellow background" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge">25% off</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Audio</p>
+              <h3>AV SoundWave Pro Headphones</h3>
+              <p class="product-desc">Wireless over-ear headphones with active noise cancellation and 40 hours of playback.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹7,499</span> <span class="mrp">₹9,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="home_featured" data-id="av-orbit-watch" data-name="AV Orbit Smartwatch" data-category-label="Wearables" data-price="5999">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="White AV Orbit smartwatch with a round display" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge">Top Rated</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Wearables</p>
+              <h3>AV Orbit Smartwatch</h3>
+              <p class="product-desc">AMOLED smartwatch with heart rate, SpO2 and sleep tracking plus a 10-day battery.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹5,999</span> <span class="mrp">₹7,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center-cta">
+          <a href="products.html" class="btn btn-secondary btn-lg">Explore All Products <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION BANNER ================= -->
+    <section class="cta-banner">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Not sure which device is right for you?</h2>
+          <p>Tell us your budget and how you will use it. Our experts will suggest the best options within one working day.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-light btn-lg">Ask an Expert</a>
+          <a href="products.html" class="btn btn-outline-light btn-lg">Compare Products</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light" aria-label="Artificial Vision home">
+          <img src="images/logo.svg" alt="" width="40" height="40">
+          <span>Artificial<strong>Vision</strong></span>
+        </a>
+        <p>Smart, reliable electronics with honest prices and real expert support.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Shop 214, Nehru Place, New Delhi 110019</li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+911140000000">+91 11 4000 0000</a></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:support@artificialvision.example">support@artificialvision.example</a></li>
+          <li><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon to Sat, 10 AM to 8 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Follow Us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> Artificial Vision. All rights reserved.</p>
+        <p class="disclaimer">Artificial Vision is a fictional brand created for a Marketing Analytics course project. Products, prices, people and contact details are sample content. Photos: Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+</body>
 </html>

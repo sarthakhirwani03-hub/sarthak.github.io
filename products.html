@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) for Google Analytics 4.
+       Replace G-XXXXXXXXXX in BOTH places below with your own Measurement ID. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shop laptops, monitors, smartphones, tablets, headphones, speakers, smartwatches, cameras and drones at Artificial Vision.">
+  <title>Products | Artificial Vision</title>
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="index.html" class="logo" aria-label="Artificial Vision home">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Artificial<strong>Vision</strong></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="products.html" class="nav-link active" aria-current="page">Products</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm nav-cta">Get Expert Advice</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ================= PAGE BANNER ================= -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Our range</p>
+        <h1>Products</h1>
+        <p>Genuine, tested electronics with transparent prices. Use the filters to find the right device faster.</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> <span aria-hidden="true">/</span> <span aria-current="page">Products</span></nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- ================= CATEGORY FILTERS ================= -->
+        <div class="filter-bar" role="group" aria-label="Filter products by category">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" type="button" data-filter="computing" aria-pressed="false"><i class="fa-solid fa-laptop" aria-hidden="true"></i> Computing</button>
+          <button class="filter-btn" type="button" data-filter="mobile" aria-pressed="false"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Mobiles &amp; Tablets</button>
+          <button class="filter-btn" type="button" data-filter="audio" aria-pressed="false"><i class="fa-solid fa-headphones" aria-hidden="true"></i> Audio</button>
+          <button class="filter-btn" type="button" data-filter="wearables" aria-pressed="false"><i class="fa-solid fa-clock" aria-hidden="true"></i> Wearables</button>
+          <button class="filter-btn" type="button" data-filter="cameras" aria-pressed="false"><i class="fa-solid fa-camera" aria-hidden="true"></i> Cameras &amp; Drones</button>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite">Showing 9 products</p>
+
+        <!-- ================= PRODUCT CARDS ================= -->
+        <div class="product-grid" id="product-grid">
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-nova-14" data-name="AV Nova 14 Laptop" data-category="computing" data-category-label="Computing" data-price="64999"
+            data-details="A premium everyday laptop for students and professionals. The Nova 14 pairs a sharp 2.8K screen with an efficient 8-core processor, so it handles assignments, analytics tools and video calls all day on a single charge."
+            data-specs="8-core processor|16 GB RAM and 512 GB SSD|14-inch 2.8K 120 Hz display|Up to 12 hours battery life|1.3 kg aluminium body|Backlit keyboard and fingerprint login">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="AV Nova 14 laptop on a wooden desk" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge">Bestseller</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Computing</p>
+              <h3>AV Nova 14 Laptop</h3>
+              <p class="product-desc">14-inch 2.8K display, 16 GB RAM and 512 GB SSD in a light 1.3 kg aluminium body.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹64,999</span> <span class="mrp">₹72,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-ultraview-27" data-name="AV UltraView 27 Monitor" data-category="computing" data-category-label="Computing" data-price="18999"
+            data-details="A sharp, fast monitor for work and gaming. The UltraView 27 gives you more screen space for spreadsheets and dashboards, and its 165 Hz panel keeps motion smooth."
+            data-specs="27-inch QHD (2560 x 1440) IPS panel|165 Hz refresh rate|1 ms response time|HDR10 support|Height and tilt adjustable stand|HDMI, DisplayPort and USB-C ports">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="AV UltraView 27 monitor on a white desk" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Computing</p>
+              <h3>AV UltraView 27 Monitor</h3>
+              <p class="product-desc">27-inch QHD IPS monitor with a 165 Hz refresh rate and HDR10 for work and play.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹18,999</span> <span class="mrp">₹22,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-pulse-x" data-name="AV Pulse X Smartphone" data-category="mobile" data-category-label="Mobiles &amp; Tablets" data-price="29999"
+            data-details="A flagship-style phone at a mid-range price. The Pulse X has a bright, smooth display, a versatile camera system and a battery that comfortably lasts a full day."
+            data-specs="6.7-inch 120 Hz AMOLED display|50 MP main + 8 MP ultra-wide + 2 MP macro cameras|8 GB RAM and 256 GB storage|5000 mAh battery with 67 W fast charging|5G and dual SIM|In-display fingerprint sensor">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="AV Pulse X smartphone showing its home screen" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Mobiles &amp; Tablets</p>
+              <h3>AV Pulse X Smartphone</h3>
+              <p class="product-desc">6.7-inch 120 Hz AMOLED screen, 50 MP triple camera and a 5000 mAh battery.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹29,999</span> <span class="mrp">₹34,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-slate-11" data-name="AV Slate 11 Tablet" data-category="mobile" data-category-label="Mobiles &amp; Tablets" data-price="24999"
+            data-details="A tablet built for note-taking, reading and streaming. The Slate 11 supports a stylus for handwritten notes and sketches, and its large battery lasts through long study sessions."
+            data-specs="11-inch 2K display|8 GB RAM and 128 GB storage|Stylus support (sold separately)|8000 mAh battery|Quad speakers|Wi-Fi 6">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="AV Slate 11 tablet with a colourful wallpaper" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Mobiles &amp; Tablets</p>
+              <h3>AV Slate 11 Tablet</h3>
+              <p class="product-desc">11-inch 2K display, 8 GB RAM and stylus support for notes and sketching.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹24,999</span> <span class="mrp">₹27,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-soundwave-pro" data-name="AV SoundWave Pro Headphones" data-category="audio" data-category-label="Audio" data-price="7499"
+            data-details="Immersive sound with the noise switched off. The SoundWave Pro blocks out traffic and chatter, so you can focus, travel or relax with rich, balanced audio."
+            data-specs="Hybrid active noise cancellation|Up to 40 hours battery life|10 minutes charge gives 5 hours play|Bluetooth 5.3 with multipoint pairing|Built-in microphones for calls|Foldable design with travel case">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Black over-ear wireless headphones on a yellow background" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge">25% off</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Audio</p>
+              <h3>AV SoundWave Pro Headphones</h3>
+              <p class="product-desc">Wireless over-ear headphones with active noise cancellation and 40 hours of playback.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹7,499</span> <span class="mrp">₹9,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-boombox-mini" data-name="AV BoomBox Mini Speaker" data-category="audio" data-category-label="Audio" data-price="3499"
+            data-details="Big sound that fits in your bag. The BoomBox Mini delivers punchy bass for parties, picnics and hostel rooms, and it survives splashes and rain."
+            data-specs="20 W stereo output|IPX7 waterproof rating|Up to 12 hours playtime|Bluetooth 5.3|Pair two speakers for stereo|USB-C charging">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Portable black Bluetooth speaker on a wooden table" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Audio</p>
+              <h3>AV BoomBox Mini Speaker</h3>
+              <p class="product-desc">Pocket-sized 20 W Bluetooth speaker with deep bass, IPX7 waterproofing and 12 hours of play.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹3,499</span> <span class="mrp">₹4,499</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-orbit-watch" data-name="AV Orbit Smartwatch" data-category="wearables" data-category-label="Wearables" data-price="5999"
+            data-details="Your health and notifications on your wrist. The Orbit tracks heart rate, blood oxygen, sleep and workouts, and its battery lasts up to 10 days on a charge."
+            data-specs="1.43-inch AMOLED always-on display|Heart rate, SpO2 (blood oxygen) and sleep tracking|100+ sports modes|Bluetooth calling|Up to 10 days battery life|5 ATM water resistance">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="White AV Orbit smartwatch with a round display" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge">Top Rated</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Wearables</p>
+              <h3>AV Orbit Smartwatch</h3>
+              <p class="product-desc">AMOLED smartwatch with heart rate, SpO2 and sleep tracking plus a 10-day battery.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹5,999</span> <span class="mrp">₹7,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-lens-24" data-name="AV Lens 24 Mirrorless Camera" data-category="cameras" data-category-label="Cameras &amp; Drones" data-price="54999"
+            data-details="A beginner-friendly camera with professional potential. The Lens 24 captures detailed photos and 4K video, and its fast autofocus keeps moving subjects sharp."
+            data-specs="24 MP APS-C sensor|4K video at 30 fps|Fast hybrid autofocus with eye detection|18 to 55 mm kit lens included|3-inch flip touchscreen|Wi-Fi and Bluetooth image transfer">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mirrorless camera and lens on a dark surface" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Cameras &amp; Drones</p>
+              <h3>AV Lens 24 Mirrorless Camera</h3>
+              <p class="product-desc">24 MP APS-C sensor, 4K video and fast autofocus, with an 18 to 55 mm kit lens.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹54,999</span> <span class="mrp">₹61,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-list="product_catalog" data-id="av-skyeye-drone" data-name="AV SkyEye 4K Drone" data-category="cameras" data-category-label="Cameras &amp; Drones" data-price="39999"
+            data-details="Capture the world from above. The SkyEye folds small enough for a backpack, holds steady in the air with its 3-axis gimbal and flies home automatically when the battery runs low. Always fly according to local drone rules."
+            data-specs="4K video at 30 fps|3-axis stabilising gimbal|Up to 30 minutes flight time|GPS with automatic return-to-home|Foldable, 249 g design|Obstacle sensing on the front">
+            <div class="product-media">
+              <img src="https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="White camera drone flying above a forest" loading="lazy" width="800" height="600" onerror="this.onerror=null;this.src='images/placeholder.svg';">
+              <span class="badge badge-new">New</span>
+            </div>
+            <div class="product-body">
+              <p class="product-cat">Cameras &amp; Drones</p>
+              <h3>AV SkyEye 4K Drone</h3>
+              <p class="product-desc">Foldable drone with 4K video, a 3-axis gimbal, GPS return-to-home and 30 minutes of flight.</p>
+              <div class="product-footer">
+                <p class="price"><span class="price-now">₹39,999</span> <span class="mrp">₹44,999</span></p>
+                <button class="btn btn-primary btn-sm js-select-item" type="button">View Details</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No products in this category yet. Please choose another filter.</p>
+      </div>
+    </section>
+
+    <!-- ================= CALL TO ACTION BANNER ================= -->
+    <section class="cta-banner">
+      <div class="container cta-inner reveal">
+        <div>
+          <h2>Want a bulk or student deal?</h2>
+          <p>Send us an enquiry with the products you need and we will share the best available offer.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn btn-light btn-lg">Send an Enquiry</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= PRODUCT DETAILS POP-UP (MODAL) ================= -->
+  <div class="modal" id="product-modal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" aria-label="Close product details" data-close-modal><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+      <div class="modal-grid">
+        <div class="modal-media"><img id="modal-img" src="images/placeholder.svg" alt=""></div>
+        <div class="modal-content">
+          <p class="product-cat" id="modal-category"></p>
+          <h2 id="modal-title">Product</h2>
+          <p class="price"><span class="price-now" id="modal-price"></span> <span class="mrp" id="modal-mrp"></span></p>
+          <p id="modal-desc"></p>
+          <h3>Key specifications</h3>
+          <ul class="spec-list" id="modal-specs"></ul>
+          <div class="modal-actions">
+            <a href="contact.html" class="btn btn-primary" id="modal-enquire">Enquire About This Product</a>
+            <button class="btn btn-secondary" type="button" data-close-modal>Keep Browsing</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo logo-light" aria-label="Artificial Vision home">
+          <img src="images/logo.svg" alt="" width="40" height="40">
+          <span>Artificial<strong>Vision</strong></span>
+        </a>
+        <p>Smart, reliable electronics with honest prices and real expert support.</p>
+      </div>
+      <div>
+        <h2 class="footer-title">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Contact</h2>
+        <ul class="footer-contact">
+          <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Shop 214, Nehru Place, New Delhi 110019</li>
+          <li><i class="fa-solid fa-phone" aria-hidden="true"></i> <a href="tel:+911140000000">+91 11 4000 0000</a></li>
+          <li><i class="fa-solid fa-envelope" aria-hidden="true"></i> <a href="mailto:support@artificialvision.example">support@artificialvision.example</a></li>
+          <li><i class="fa-solid fa-clock" aria-hidden="true"></i> Mon to Sat, 10 AM to 8 PM</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="footer-title">Follow Us</h2>
+        <ul class="social-links">
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener" aria-label="Artificial Vision on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year">2026</span> Artificial Vision. All rights reserved.</p>
+        <p class="disclaimer">Artificial Vision is a fictional brand created for a Marketing Analytics course project. Products, prices, people and contact details are sample content. Photos: Unsplash.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+</body>
+</html>
